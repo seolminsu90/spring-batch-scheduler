@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: mysql
+
+---
+spring:
+  profiles: mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:23306/spring_batch?serverTimezone=UTC&useSSL=false
+    username: root
+    password: 1234
+---
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+      
